@@ -194,7 +194,12 @@ section#home {
 	border: 1px solid #3B4250;
 }
 
-
+#home div#icon_social {
+	display: relative;
+	width: 100%;
+	padding: 20px 0;
+	height: 54px;
+}
 
 a.facebook, a.twitter {
 	display: inline-block;
@@ -456,7 +461,7 @@ div.text {
 	display: block;
 	position: absolute;
 	top: 0;
-
+	border: none; /*防止IE中border*/
 }
 
 .text div a img.flipped {

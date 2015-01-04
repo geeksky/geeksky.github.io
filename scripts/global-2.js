@@ -90,14 +90,14 @@ function navSlide(){
 		}
 	}
 
-	function windowMove(iTarget) {			
-		var iSpeed = (iTarget - window.scrollY) / 10;
+	function windowMove(iTarget) {		
+		var iSpeed = (iTarget - window.pageYOffset) / 10;
 		iSpeed = iSpeed > 0 ? Math.ceil(iSpeed) : Math.floor(iSpeed);
-		if(iTarget == window.scrollY) {
+		if(iTarget == window.pageYOffset) {
 			clearInterval(timer);	
 		}
 		else{
-			window.scroll(0,window.scrollY+iSpeed);
+			window.scroll(0,window.pageYOffset+iSpeed);
 		}
 	}
 
